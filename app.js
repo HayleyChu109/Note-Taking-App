@@ -28,26 +28,6 @@ app.use(basicAuth({
     challenge: true,
 }));
 
-// function myAuthorizer(username, password, callback) {
-//     const USERS = fs.readFileSync("./users.json", "utf-8",
-//         async(err, data) => {
-//             if (err) {
-//                 throw new Error(err)
-//             } else {
-//                 return await data
-//             }
-//         });
-    
-//     let parsedUsers = JSON.parse(USERS);
-//     for (let i=0; i<parsedUsers.users.length; i++) {
-//         if (username == parsedUsers.users[i].username && password == parsedUsers.users[i].password) {
-//             return callback(null, true)
-//         }
-//     }
-// }
-
-
-
 // Set up note service and router
 const NoteService = require("./NoteService");
 const NoteRouter = require("./NoteRouter");
