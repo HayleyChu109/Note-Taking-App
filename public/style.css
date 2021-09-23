@@ -1,0 +1,85 @@
+/* Global 
+--------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common
+--------------------------------------*/
+.form-control {
+  border: 3px solid #e7717d;
+}
+
+/* Header
+--------------------------------------*/
+header {
+  background-color: #475b5a;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 3px solid #e7717d;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 18px;
+}
+
+h4 {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* Left side container
+--------------------------------------*/
+.c-1 {
+  background-color: #e7717d;
+  height: 95vh;
+}
+
+.c-1 h1 {
+  font-family: "Lobster", cursive;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.btn-submit {
+  background-color: #e7717d;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 1.25rem;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 6px;
+}
+
+/* Right side container
+--------------------------------------*/
+.c-2 h1 {
+  font-family: "Lobster", cursive;
+  color: #e7717d;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.btn-delete {
+  background-color: #e7717d;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 7px;
+}

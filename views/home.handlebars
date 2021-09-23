@@ -1,0 +1,35 @@
+<section>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="c-1 col-lg-5">
+                <h1>Welcome! {{user}}</h1>
+                <form id="noteForm" action="/api/notes" method="POST">
+                    <div class="form-floating">
+                        <textarea class="form-control" id="inputForm" type="text" name="inputNote"
+                            style="height: 350px"></textarea>
+                        <label for="inputForm">Your notes</label>
+                    </div>
+                    <button class="btn-submit" type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="c-2 col-lg-7">
+                <h1>{{user}}'s notes</h1>
+                    {{#each notes}}
+                    <div class="container">
+                        <div class="row align-items-center">                       
+                            <div class="col-lg-11">
+                                <textarea class="updateForm form-control" type="text" name={{@index}}
+                                        rows="4">{{this}}</textarea>
+                            </div>
+                            <div class="col-lg-1">
+                                <button class="btn-delete" id={{@index}}>Delete</button>
+                            </div>                     
+                        </div>
+                    </div>
+                    <br>
+                    {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
